@@ -11,5 +11,6 @@ export const sanitizeXSS = (input: string): string => {
   };
 
   // Substitute the special characters using a global regex
-  return input.replace(/[&<>"'/]/g, (char) => map[char]);
+  // Fallback to the original character to satisfy TypeScript strict mode
+  return input.replace(/[&<>"'/]/g, (char) => map[char] || char);
 };

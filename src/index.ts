@@ -48,4 +48,4 @@ export class Sentinel {
 }
 
 // Exporting types for external usage
-export { Schema, MaskType };
+export type { Schema, MaskType };

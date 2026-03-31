@@ -16,7 +16,8 @@ export const maskData = (input: string, type: MaskType): string => {
     case 'email':
       // Masks email: u***r@example.com
       const [user, domain] = input.split('@');
-      if (!domain) return input;
+      // Added check for 'user' to satisfy TypeScript strict null checks
+      if (!user || !domain) return input; 
       return `${user[0]}${'*'.repeat(Math.max(user.length - 1, 3))}@${domain}`;
 
     case 'creditCard':

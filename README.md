@@ -35,10 +35,17 @@ const safeData = guard.shieldObject(userSchema, rawData);
 // bio becomes: &lt;script&gt;alert("hacked")&lt;&#x2F;script&gt;
 
 // 2. Mask sensitive data
-const maskedEmail = guard.mask('dev@example.com', 'email'); // d*********@example.com
+const maskedEmail = guard.mask('dev@example.com', 'email'); // d********@example.com
 ```
 
 ## 🧪 Testing
 ```bash
 npm test
+```
+
+## 🎮 Try the Demo
+Check out the `examples/` folder to see Sentinel-Shield in action with real-world scenarios.
+Run the demo locally using:
+```bash
+npx ts-node examples/demo.ts
 ```
