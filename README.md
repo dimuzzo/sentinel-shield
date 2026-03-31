@@ -18,7 +18,7 @@ Sentinel-Shield provides a robust defense layer for your application by automati
 Currently, the project can be used locally by cloning the repository:
 
 ```bash
-git clone [https://github.com/dimuzzo/sentinel-shield.git](https://github.com/dimuzzo/sentinel-shield.git)
+git clone https://github.com/dimuzzo/sentinel-shield.git
 cd sentinel-shield
 npm install
 ```
