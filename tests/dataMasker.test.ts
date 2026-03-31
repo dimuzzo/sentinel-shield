@@ -4,7 +4,7 @@ describe('Data Masker Rule', () => {
   test('should mask an email address correctly', () => {
     const email = 'developer@example.com';
     const masked = maskData(email, 'email');
-    expect(masked).toBe('d*********@example.com');
+    expect(masked).toBe('d********@example.com');
   });
 
   test('should mask a credit card keeping only the last 4 digits', () => {
