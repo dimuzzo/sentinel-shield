@@ -6,8 +6,6 @@
 
 A lightweight, modular, and secure data sanitization library for TypeScript applications.
 
-A lightweight, modular, and secure data sanitization library for TypeScript applications.
-
 ## 🚀 Overview
 Sentinel-Shield provides a robust defense layer for your application by automating data validation, XSS protection, and sensitive information masking.
 
@@ -17,13 +15,17 @@ Sentinel-Shield provides a robust defense layer for your application by automati
 * **Data Masking:** Protects user privacy by masking emails, credit cards, and phone numbers.
 
 ## 📦 Installation
+Currently, the project can be used locally by cloning the repository:
+
 ```bash
-npm install sentinel-shield
+git clone [https://github.com/dimuzzo/sentinel-shield.git](https://github.com/dimuzzo/sentinel-shield.git)
+cd sentinel-shield
+npm install
 ```
 
 ## 🛠️ Quick Start
 ```typescript
-import { Sentinel, Schema } from './src/index';
+import { Sentinel, type Schema } from './src/index';
 
 const guard = new Sentinel();
 
