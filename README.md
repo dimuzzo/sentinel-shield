@@ -1,5 +1,11 @@
 # 🛡️ Sentinel-Shield
 
+![Build Status](https://github.com/dimuzzo/sentinel-shield/actions/workflows/tests.yml/badge.svg)
+![License](https://img.shields.io/github/license/dimuzzo/sentinel-shield)
+![TypeScript](https://img.shields.io/badge/language-TypeScript-blue)
+
+A lightweight, modular, and secure data sanitization library for TypeScript applications.
+
 A lightweight, modular, and secure data sanitization library for TypeScript applications.
 
 ## 🚀 Overview
